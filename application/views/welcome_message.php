@@ -67,9 +67,21 @@
 <body>
 
 <div id="container">
-	<h1>Welcome to CodeIgniter!</h1>
+	<h1>Welcome to Planr!</h1>
 
 	<div id="body">
+		
+		<?php echo form_open();
+		echo form_label('User Name: ');
+		echo form_input('username');
+		echo "<br />";
+		echo form_label('Password: ');
+		echo form_password('password');
+		echo "<br />";
+		echo form_submit('0','Login');
+		echo form_close();?>
+		
+		<p>Coming Soon!</p>
 		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
 
 		<p>If you would like to edit this page you'll find it located at:</p>
